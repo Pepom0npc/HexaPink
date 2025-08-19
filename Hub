@@ -1,9 +1,9 @@
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 local Window = WindUI:CreateWindow({
-    Title = "HexaPink hub",
-    Icon = "hexagon",
-    Author = "made by pepom",
+    Title = "HexaPink Hub",
+    Icon = "rbxassetid://120161359725098",
+    Author = "Made by pepom",
     Folder = "MySuperHub",
 
     -- ↓ This all is Optional. You can remove it.
@@ -15,6 +15,14 @@ local Window = WindUI:CreateWindow({
     BackgroundImageTransparency = 0.20,
     HideSearchBar = false,
     ScrollBarEnabled = true,
+
+    User = {
+        Enabled = true,
+        Anonymous = false,
+        Callback = function()
+            print("clicked")
+        end,
+    },
 
     -- ! ↓ remove this all if you DON'T need the key system
     KeySystem = { 
@@ -46,32 +54,212 @@ local MainTab = Window:Tab({
     Locked = false,
 })
 
+local HubsTab = Window:Tab({
+    Title = "Hubs",
+    Icon = "sparkles",
+    Locked = false,
+})
+
 local GamesTab = Window:Tab({
     Title = "Games",
     Icon = "gamepad-2",
     Locked = false,
 })
 
+local AnimsTab = Window:Tab({
+    Title = "Animations",
+    Icon = "smile-plus",
+    Locked = false,
+})
+
 local Section = HomeTab:Section({ 
-    Title = "Made by Pepom0npc",
+    Title = "Welcome to HexaPink Made by Pepom0npc",
+    TextXAlignment = "Left",
+    TextSize = 17, -- Default Size
+})
+
+local Section = MainTab:Section({ 
+    Title = "Main Scripts",
+    TextXAlignment = "Left",
+    TextSize = 17, -- Default Size
+})
+
+local Section = HubsTab:Section({ 
+    Title = "Hubs",
+    TextXAlignment = "Left",
+    TextSize = 17, -- Default Size
+})
+
+local Section = GamesTab:Section({ 
+    Title = "Scripts for games",
+    TextXAlignment = "Left",
+    TextSize = 17, -- Default Size
+})
+
+local Section = AnimsTab:Section({ 
+    Title = "Animations",
     TextXAlignment = "Left",
     TextSize = 17, -- Default Size
 })
 
 HomeTab:Button({
     Title = "Jaja hub",
-    Desc = "",
+    Desc = "The original hub",
     Locked = false,
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Pepom0npc/Jaja-hub/refs/heads/main/Jaja%20Hub", true))()
+        end
+})
+
+Window:SelectTab(1) -- Number of Tab
+
+local Button = MainTab:Button({
+    Title = "Infinite yeild",
+    Desc = "Infinite yeild commands",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "Telekenis",
+    Desc = "Grab unanchored parts",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Telekenis.lua"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "Fake lag",
+    Desc = "Fake Lag troll",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FAKE-LAG-22520"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "Vr",
+    Desc = "Bad executors wont work",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty45.lua"))()
+    end
+})
+
+local Button = HubsTab:Button({
+    Title = "Chatbot",
+    Desc = "Chatbot Hub",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Guerric9018/chatbothub/main/ChatbotHub.lua"))()
+    end
+})
+
+local Button = AnimsTab:Button({
+    Title = "Goon r6",
+    Desc = "Makes you goon",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+    end
+})
+
+local Button = AnimsTab:Button({
+    Title = "Energize",
+    Desc = "Energize animations",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RENBex6969/AnimationScripts/refs/heads/main/FE_R6_Animations_Gui.lua"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "Quirky CMD",
+    Desc = "Test Button",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
+    end
+})
+
+local Button = AnimsTab:Button({
+    Title = "Ugc Emotes",
+    Desc = "Free Ugc Emotes",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/1nJD7PkH",true))()
+    end
+})
+
+local Button = GamesTab:Button({
+    Title = "MM2",
+    Desc = "Murder Mystery 2 Script",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring"))()
+    end
+})
+
+local Button = GamesTab:Button({
+    Title = "Lt2",
+    Desc = "Lumber tycoon 2 Script",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/Root2.lua'))("")
+    end
+})
+
+local Button = HubsTab:Button({
+    Title = "Vexon",
+    Desc = "Vexon Hub",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "Piano",
+    Desc = "Piano Script",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/TALENTLESS", true))()
+    end
+})
+local Button = GamesTab:Button({
+    Title = "Dead Rails",
+    Desc = "Dead rails Bonds Script",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/m00ndiety/OP-AUTO-BONDS-V2/refs/heads/main/obf_New_auto_bonds_.lua.txt"))()
+    end
+})
+local Button = HubsTab:Button({
+    Title = "Speed",
+    Desc = "Speed Hub",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Button",
+    Desc = "Test Button",
+    Locked = false,
+    Callback = function()
     
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Button",
+    Desc = "Test Button",
+    Locked = false,
+    Callback = function()
     
-
-
-
-
-
-
-
     end
 })
