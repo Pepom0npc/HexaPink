@@ -1,0 +1,77 @@
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+
+local Window = WindUI:CreateWindow({
+    Title = "HexaPink hub",
+    Icon = "hexagon",
+    Author = "made by pepom",
+    Folder = "MySuperHub",
+
+    -- ↓ This all is Optional. You can remove it.
+    Size = UDim2.fromOffset(760, 460),
+    Transparent = true,
+    Theme = "Dark",
+    Resizable = false,
+    SideBarWidth = 200,
+    BackgroundImageTransparency = 0.20,
+    HideSearchBar = false,
+    ScrollBarEnabled = true,
+
+    -- ! ↓ remove this all if you DON'T need the key system
+    KeySystem = { 
+        Key = { "Pink", "pink" },
+        Note = "Example Key System.",
+        SaveKey = true, -- automatically save and load the key.
+    }
+})
+
+Window:Tag({
+    Title = "HexaPink",
+    Color = Color3.fromHex("#FFB6C1")
+})
+
+Window:Tag({
+    Title = "Official Nebura Support",
+    Color = Color3.fromHex("#A020F0")
+})
+
+local HomeTab = Window:Tab({
+    Title = "Home",
+    Icon = "house",
+    Locked = false,
+})
+
+local MainTab = Window:Tab({
+    Title = "Main",
+    Icon = "boxes",
+    Locked = false,
+})
+
+local GamesTab = Window:Tab({
+    Title = "Games",
+    Icon = "gamepad-2",
+    Locked = false,
+})
+
+local Section = HomeTab:Section({ 
+    Title = "Made by Pepom0npc",
+    TextXAlignment = "Left",
+    TextSize = 17, -- Default Size
+})
+
+HomeTab:Button({
+    Title = "Jaja hub",
+    Desc = "",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pepom0npc/Jaja-hub/refs/heads/main/Jaja%20Hub", true))()
+    
+    
+
+
+
+
+
+
+
+    end
+})
