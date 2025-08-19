@@ -114,8 +114,8 @@ HomeTab:Button({
 Window:SelectTab(1) -- Number of Tab
 
 local Button = MainTab:Button({
-    Title = "Infinite yeild",
-    Desc = "Infinite yeild commands",
+    Title = "Infinite yield",
+    Desc = "Infinite yield commands",
     Locked = false,
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
@@ -127,7 +127,7 @@ local Button = MainTab:Button({
     Desc = "Grab unanchored parts",
     Locked = false,
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Telekenis.lua"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/sAi0A9Mc", true))()
     end
 })
 
@@ -177,8 +177,8 @@ local Button = AnimsTab:Button({
 })
 
 local Button = MainTab:Button({
-    Title = "Quirky CMD",
-    Desc = "Test Button",
+    Title = "Quirky",
+    Desc = "Quirky CMD",
     Locked = false,
     Callback = function()
     loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
