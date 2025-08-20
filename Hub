@@ -12,7 +12,7 @@ local Window = WindUI:CreateWindow({
     Theme = "Dark",
     Resizable = false,
     SideBarWidth = 200,
-    BackgroundImageTransparency = 0.20,
+    BackgroundImageTransparency = 0.42,
     HideSearchBar = false,
     ScrollBarEnabled = true,
 
@@ -25,7 +25,7 @@ local Window = WindUI:CreateWindow({
     },
 
     -- ! ↓ remove this all if you DON'T need the key system
-    KeySystem = { 
+    KeySystem = {
         Key = { "Pink", "pink" },
         Note = "Example Key System.",
         SaveKey = true, -- automatically save and load the key.
@@ -34,7 +34,7 @@ local Window = WindUI:CreateWindow({
 
 Window:Tag({
     Title = "HexaPink",
-    Color = Color3.fromHex("#FFB6C1")
+    Color = Color3.fromHex("#f368ecff")
 })
 
 Window:Tag({
@@ -112,6 +112,15 @@ HomeTab:Button({
 })
 
 Window:SelectTab(1) -- Number of Tab
+
+    local Keybind = HomeTab:Keybind({
+    Title = "Keybind",
+    Desc = "Keybind to open HexaPink",
+    Value = "G",
+    Callback = function(v)
+        Window:SetToggleKey(Enum.KeyCode[v])
+    end
+})
 
 local Button = MainTab:Button({
     Title = "Infinite yield",
