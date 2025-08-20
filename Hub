@@ -2,7 +2,7 @@ local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/rel
 
 local Window = WindUI:CreateWindow({
     Title = "HexaPink Hub",
-    Icon = "rbxassetid://93090991117536",
+    Icon = "rbxassetid://125794429761474",
     Author = "Made by pepom",
     Folder = "MySuperHub",
 
