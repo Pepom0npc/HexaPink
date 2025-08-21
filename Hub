@@ -34,7 +34,7 @@ local Window = WindUI:CreateWindow({
 
 Window:Tag({
     Title = "HexaPink",
-    Color = Color3.fromHex("#F368ECFF")
+    Color = Color3.fromHex("#F368EC")
 })
 
 Window:Tag({
