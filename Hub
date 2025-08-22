@@ -255,12 +255,39 @@ local Button = HubsTab:Button({
     end
 })
 
-local Button = Tab:Button({
-    Title = "Button",
-    Desc = "Test Button",
+local Button = GamesTab:Button({
+    Title = "Rivals",
+    Desc = "Rivals script",
     Locked = false,
     Callback = function()
-    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowBey01/SHWX-Team-Rise-Scripts/refs/heads/main/Games/Rise%20(Rivals).lua", true))()
+    end
+})
+
+local Button = AnimsTab:Button({
+    Title = "Silly Emote",
+    Desc = "Silly emote script",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Gaze-stuff/refs/heads/main/Silly%20emote"))()
+    end
+})
+
+local Button = GamesTab:Button({
+    Title = "Ink game",
+    Desc = "Ink game script",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/0785b4b8f41683be513badd57f6a71c0.lua"))()
+    end
+})
+
+local Button = MainTab:Button({
+    Title = "Super ring parts",
+    Desc = "Super ring parts script",
+    Locked = false,
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/JR7RBh2a"))()
     end
 })
 
@@ -269,6 +296,24 @@ local Button = Tab:Button({
     Desc = "Test Button",
     Locked = false,
     Callback = function()
-    
+
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Button",
+    Desc = "Test Button",
+    Locked = false,
+    Callback = function()
+
+    end
+})
+
+local Button = Tab:Button({
+    Title = "Button",
+    Desc = "Test Button",
+    Locked = false,
+    Callback = function()
+
     end
 })
