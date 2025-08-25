@@ -73,7 +73,7 @@ local AnimsTab = Window:Tab({
 })
 
 local Section = HomeTab:Section({ 
-    Title = "Welcome to HexaPink Made by Pepom0npc",
+    Title = "Welcome to HexaPink Made by Pepom",
     TextXAlignment = "Left",
     TextSize = 17, -- Default Size
 })
