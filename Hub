@@ -73,7 +73,7 @@ local AnimsTab = Window:Tab({
 })
 
 local Section = HomeTab:Section({ 
-    Title = "Welcome to HexaPink Made by Pepom",
+    Title = "Welcome to HexaPink Made by Pepom0npc",
     TextXAlignment = "Left",
     TextSize = 17, -- Default Size
 })
@@ -291,12 +291,12 @@ local Button = MainTab:Button({
     end
 })
 
-local Button = Tab:Button({
-    Title = "Button",
-    Desc = "Test Button",
+local Button = GamesTab:Button({
+    Title = "99 Nights in the forest"
+    Desc = "99nitf script",
     Locked = false,
     Callback = function()
-
+    loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/6a20b242342242d4a39c828a1ea9f311"))()
     end
 })
 
