@@ -1,4 +1,4 @@
-local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/refs/heads/main/main.lua"))()
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 local Window = WindUI:CreateWindow({
     Title = "HexaPink Hub",
@@ -267,7 +267,7 @@ local Button = GamesTab:Button({
 })
 
 local Button = AnimsTab:Button({
-    Title = "Silly Emote",
+    Title = "Silly emote",
     Desc = "Silly emote script",
     Locked = false,
     Callback = function()
@@ -275,18 +275,9 @@ local Button = AnimsTab:Button({
     end
 })
 
-local Button = GamesTab:Button({
-    Title = "Ink game",
-    Desc = "Ink game script",
-    Locked = false,
-    Callback = function()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/0785b4b8f41683be513badd57f6a71c0.lua"))()
-    end
-})
-
 local Button = MainTab:Button({
     Title = "Super ring parts",
-    Desc = "Super ring parts script",
+    Desc = "Super ring parts scripts",
     Locked = false,
     Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/JR7RBh2a"))()
@@ -294,19 +285,10 @@ local Button = MainTab:Button({
 })
 
 local Button = Tab:Button({
-    Title = "Button",
-    Desc = "Test Button",
+    Title = "Ink Game",
+    Desc = "Ink Game script",
     Locked = false,
     Callback = function()
-
-    end
-})
-
-local Button = Tab:Button({
-    Title = "Button",
-    Desc = "Test Button",
-    Locked = false,
-    Callback = function()
-
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/0785b4b8f41683be513badd57f6a71c0.lua"))()
     end
 })
