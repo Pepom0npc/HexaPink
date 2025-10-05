@@ -238,6 +238,7 @@ local Button = MainTab:Button({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/TALENTLESS", true))()
     end
 })
+
 local Button = GamesTab:Button({
     Title = "Dead Rails",
     Desc = "Dead rails Bonds Script",
@@ -246,6 +247,7 @@ local Button = GamesTab:Button({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/m00ndiety/OP-AUTO-BONDS-V2/refs/heads/main/obf_New_auto_bonds_.lua.txt"))()
     end
 })
+
 local Button = HubsTab:Button({
     Title = "Speed",
     Desc = "Speed Hub",
@@ -288,15 +290,6 @@ local Button = MainTab:Button({
     Locked = false,
     Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/JR7RBh2a"))()
-    end
-})
-
-local Button = GamesTab:Button({
-    Title = "99 Nights in the forest"
-    Desc = "99nitf script",
-    Locked = false,
-    Callback = function()
-    loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/6a20b242342242d4a39c828a1ea9f311"))()
     end
 })
 
